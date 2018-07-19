@@ -4,7 +4,16 @@ let app = new Vue({
     
     data: {
         
-        message: "HELLO THERE!"
+        type: "",
+        
+    },
+    
+    
+    methods: {
+        
+    
+        
     }
     
+        
 })
