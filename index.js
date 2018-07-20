@@ -10,16 +10,37 @@ let app = new Vue({
         mixes: [
           
             
-            regLeafyGreens: {
-            
-                masterblend:    2.0,
-                calcint:        2.0,
-                magSulf:        1.0
+            {   regLeafyGreens: 
+                
+                {   masterblend:    2.0,
+                    calcint:        2.0,
+                    magSulf:        1.0
+                }
             
             },
             
-            
-            regNutrientHogs {
+        ],  /*  END MIXES SECTION  */
+        
+    },  /*  END DATA SECTION  */
+    
+    
+    methods: {
+        
+    
+        
+    }   /*  END METHODS SECTION  */
+    
+        
+})
+
+
+
+
+
+
+/*  SAVING THIS TO BE PUT BACK IN LATER
+
+regNutrientHogs {
             
                 masterblend:    2.4,
                 calcint:        2.4,
@@ -84,19 +105,4 @@ let app = new Vue({
                 magSulf:        1.2,
                 ammSulf:        0.3
             
-            },
-            
-          
-        ],  /*  END MIXES SECTION  */
-        
-    },  /*  END DATA SECTION  */
-    
-    
-    methods: {
-        
-    
-        
-    }   /*  END METHODS SECTION  */
-    
-        
-})
+            },*/
