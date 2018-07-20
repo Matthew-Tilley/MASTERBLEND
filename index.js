@@ -7,19 +7,9 @@ let app = new Vue({
         type: "",
         
         
-        mixes: [
-          
-            
-            {   regLeafyGreens: 
-                
-                {   masterblend:    2.0,
-                    calcint:        2.0,
-                    magSulf:        1.0
-                }
-            
-            },
-            
-        ],  /*  END MIXES SECTION  */
+        mixes: {
+            something: "LKJASD";
+        }
         
     },  /*  END DATA SECTION  */
     
