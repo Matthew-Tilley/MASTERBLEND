@@ -9,7 +9,7 @@ let app = new Vue({
         
         mixes: {
             something: "LKJASD";
-        }
+        },
         
     },  /*  END DATA SECTION  */
     
