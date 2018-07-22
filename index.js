@@ -9,7 +9,7 @@ $(document).ready(function(){
     
         console.log("BLURP");
      
-     $(body).css("background-color", "blue");
+     $("body").css("background-color", "blue");
         
     }
 
