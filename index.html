@@ -14,7 +14,7 @@
         
         <div id="app">
             
-            <select v-model="type">
+            <select onchange="typeGet()">
                 
                 <option value="LFGR" onchange="typeGet()">Leafy greens</option>
                 <option value="NUHG" onchange="typeGet()">Nutrient hogs</option>
@@ -23,7 +23,7 @@
             </select>
             
        
-            <button onclick="typeGet()"></button>
+            
             
         </div>
         
