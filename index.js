@@ -7,9 +7,10 @@ let x = $(document).ready(function(){
         return tempVal;
     })
     
-   console.log(x);
+   console.log(x());
     
-    // As expected, this gives me back the function.
+    // Now I put in the parens to run this like a function, but it's not
+    // working.
     
     
    
