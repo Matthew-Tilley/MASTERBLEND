@@ -1,12 +1,13 @@
 $(document).ready(function(){
     
 
-    function typeGet() {
+   
+});
+
+
+ function typeGet() {
     
         console.log("BLURP");
         
     }
     
-});
-
-
