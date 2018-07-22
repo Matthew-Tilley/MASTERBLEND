@@ -5,7 +5,7 @@ $(document).ready(function(){
     
     $("#seedType").change( function() {
         
-        alert( $("seedType :selected" ).val() );
+        alert( "JKLKJLKJKLJ");
         
     });
     
