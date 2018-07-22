@@ -16,8 +16,8 @@
             
             <select v-model="type">
                 
-                <option value="LFGR">Leafy greens</option>
-                <option value="NUHG">Nutrient hogs</option>
+                <option value="LFGR" onchange="typeGet()">Leafy greens</option>
+                <option value="NUHG" onchange="typeGet()">Nutrient hogs</option>
                 <option value="PEPS">Peppers</option>
                 
             </select>
@@ -26,7 +26,12 @@
             
         </div>
         
-    
+    <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+        
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>    
     <script src="index.js"></script>    
         
