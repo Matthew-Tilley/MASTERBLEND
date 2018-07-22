@@ -5,8 +5,7 @@ $(document).ready(function(){
     
     $("#seedType").change( function() {
         
-        let tempVal = $("#seedType:selected").val();
-        
+        let tempVal = $(this).val();
         alert(tempVal);
         
     });
