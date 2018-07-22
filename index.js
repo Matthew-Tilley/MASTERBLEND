@@ -1,11 +1,11 @@
 $(document).ready(function(){
     
+
+    function typeGet() {
     
+        
+    }
     
 });
 
 
-function typeGet() {
-    
-    
-}
