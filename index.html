@@ -14,7 +14,8 @@
         
         <div id="app">
             
-            <select id="seedType">
+            <select id="seedType"
+                    v-model="seedType">
                 
                 <option value="LFGR"> Leafy greens </option>
                 <option value="NUHG"> Nutrient hogs </option>
@@ -22,7 +23,7 @@
                 
             </select>
             
-            {{message}}
+         {{seedType}}
             
             
        

@@ -4,10 +4,17 @@ let app = new Vue({
     
     data: {
         
-        message: "Hello Vue!"
+        seedType: null,
+        
+        
+        
+        
         
     }
-    
+        
 });
+
+
+app.message = "I have changed the data!";
 
 
