@@ -1,20 +1,13 @@
-
-
-
-$(document).ready(function(){
-    
-    let x = $("#seedType").change( function() {
-        
-        let tempVal = $(this).val();
-        return tempVal;
-        
-    });
-    
-    console.log(x());
-    
+let app = new Vue({
    
+    el: "#app",
+    
+    data: {
+        
+        message: "Hello Vue!"
+        
+    }
+    
 });
-
-
 
 
