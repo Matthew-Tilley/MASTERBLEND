@@ -3,12 +3,14 @@
 
 $(document).ready(function(){
     
-    $("#seedType").change( function() {
+    let x = $("#seedType").change( function() {
         
         let tempVal = $(this).val();
-        alert(tempVal);
+        return tempVal;
         
     });
+    
+    console.log(x());
     
    
 });
