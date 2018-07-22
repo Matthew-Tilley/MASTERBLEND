@@ -1,13 +1,15 @@
-$(document).ready(function(){
+let x = $(document).ready(function(){
     
     $("#seedType").on("change", function() {
         
         let tempVal = $(this).val();
         
-        console.log(tempVal)
+        return tempVal;
     })
     
-   // THIS WORKS FINE
+   console.log(x);
+    
+    // As expected, this gives me back the function.
     
     
    
