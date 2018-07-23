@@ -7,20 +7,24 @@
 
 .LOC-T-01
 {
-    display: flex;
-    justify-content: center;
-    align-items:    center;
+    display: grid;
+    
+    
+  
 }
 
 
 .OPT-T-01
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:     20px;
-    width:      80px;
+
+    
     border:     2px solid black;
     
     color: red;
 }
+
+
+.ING-01 {grid-area: ING-01;}
+.ING-02 {grid-area: ING-02;}
+.ING-03 {grid-area: ING-03;}
+.ING-04 {grid-area: ING-04;}
