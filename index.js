@@ -4,7 +4,7 @@ let app = new Vue({
     
     data: {
         
-        plantType:           null,
+        plantType:          null,
         
         gallons:            null,
         

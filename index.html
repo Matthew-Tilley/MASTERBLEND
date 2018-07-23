@@ -41,6 +41,19 @@
                 
             </select>
             
+            
+            <label>Flowering</label>
+            <input type="radio"
+                   v-model="flowering"
+                   :value="true"
+                   v-on:change="mixSelector">
+            
+            <label>Vegetation</label>
+            <input type="radio"
+                   v-model="flowering"
+                   :value="false"
+                   v-on:change="mixSelector">
+            
          {{plantType}}
             
            
