@@ -6,7 +6,7 @@ let app = new Vue({
         
         plantType:           null,
         
-        gallons:            10,
+        gallons:            null,
         
         masterBlend:        null,
         
