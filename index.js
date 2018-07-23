@@ -6,15 +6,27 @@ let app = new Vue({
         
         seedType: null,
         
+        number: 0
         
         
         
+        
+        
+    },   /*  END DATA SECTION  */
+    
+    
+    methods: {
+        
+        calculator: function(){
+            
+            this.number ++;
+            
+            
+            
+        }
         
     }
         
 });
-
-
-app.message = "I have changed the data!";
 
 
