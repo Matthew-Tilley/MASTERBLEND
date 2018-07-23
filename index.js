@@ -16,7 +16,7 @@ let app = new Vue({
         
         ammoniumSulfate:    null,
         
-        hardWater:          false,
+        hardWater:          true,
         
         flowering:          true,
         
@@ -74,7 +74,7 @@ let app = new Vue({
             
             
             if ( this.seedType == "PEPR" && // HARD WATER
-                 this.hardwater == true &&  // VEGETATION
+                 this.hardWater == true &&  // VEGETATION
                  this.flowering == false )
                     {
                         this.mixture_2();
@@ -82,7 +82,7 @@ let app = new Vue({
             
             
             if ( this.seedType == "PEPR" &&  // SOFT WATER
-                 this.hardwater == false &&  // FLOWERING 
+                 this.hardWater == false &&  // FLOWERING 
                  this.flowering == true )
                     {
                         this.mixture_3();
@@ -90,7 +90,7 @@ let app = new Vue({
             
             
             if ( this.seedType == "PEPR" &&  // HARD WATER
-                 this.hardwater == true &&  // FLOWERING 
+                 this.hardWater == true &&  // FLOWERING 
                  this.flowering == true )
                     {
                         this.mixture_4();
@@ -175,4 +175,6 @@ let app = new Vue({
 // RE-CHECKED FIRST BATCH (EACH TYPE / HARD WATER = FALSE / FLOWERING = FALSE) ALL WORKING PROPERLY.  (Added display for ammonium sulfate.)
 // CHECKED SECOND BATCH (EACH TYPE / HARD WATER = TRUE / FLOWERING = FALSE) ALL WORKING PROPERLY.
 // CHECKED THIRD BATCH (MIX #3 / HARD WATER = FALSE / FLOWERING = TRUE) **NOT** WORKING PROPERLY.
+// RE-CHECKED THIRD BATCH (MIX #3 / HARD WATER = FALSE / FLOWERING = TRUE) AFTER FINDING & CORRECTING PROBLEM - NOW WORKING PROPERLY.
+// CHECKED FOURTH BATCH (MIX #4 / HARD WATER = TRUE / FLOWERING = TRUE) - WORKING PROPERLY.
 
