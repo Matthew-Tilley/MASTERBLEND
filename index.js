@@ -16,7 +16,7 @@ let app = new Vue({
         
         ammoniumSulfate:    null,
         
-        hardWater:          false,
+        hardWater:          null,
         
         flowering:          null,
         
