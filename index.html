@@ -14,8 +14,22 @@
         
         <div id="app">
             
-            <input type="text" v-bind:value=gallons
-                                v-on:change="mixSelector">
+            <input type="text" v-model="gallons"
+                               v-on:change="mixSelector">
+            
+            <label>Soft</label>
+            <input type="radio"
+                    name="waterType"
+                   value="false"
+                   v-model="hardWater"
+                   v-on:change="mixSelector">
+            
+            <label>Hard</label>
+            <input type="radio"
+                    name="waterType"
+                   value="true"
+                   v-model="hardWater"
+                   v-on:change="mixSelector">
             
             <select id="plantType"
                     v-model="plantType"
