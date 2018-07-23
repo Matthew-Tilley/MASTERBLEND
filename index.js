@@ -19,11 +19,7 @@ let app = new Vue({
         hardWater:          null,
         
         flowering:          null,
-        
-        
-        
-        
-        
+          
     },   /*  END DATA SECTION  */
     
     
@@ -98,6 +94,9 @@ let app = new Vue({
             
         },   /*  END CALCULATOR FUNCTION  */
         
+        
+        
+         // ------------  FUNCTIONS FOR INDIVIDUAL MIXTURES  ------------ //
         
         
         mixture_1: function() {

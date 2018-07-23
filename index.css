@@ -3,3 +3,11 @@
     width: 30vw;
     border: 2px solid black;
 }
+
+
+.LOC-T-01
+{
+    display: flex;
+    justify-content: center;
+    align-items:    center;
+}
