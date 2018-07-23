@@ -17,8 +17,17 @@
             <input type="text" v-model="gallons"
                                v-on:change="mixSelector">
             
+            <label>Soft</label>
             <input type="radio"
-                   v-bind:value="{{true}}">
+                   v-model="hardWater"
+                   :value="false"
+                   v-on:change="mixSelector">
+            
+            <label>Hard</label>
+            <input type="radio"
+                   v-model="hardWater"
+                   :value="true"
+                   v-on:change="mixSelector">
             
             
             
