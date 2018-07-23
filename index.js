@@ -16,9 +16,9 @@ let app = new Vue({
         
         ammoniumSulfate:    null,
         
-        hardWater:          true,
+        hardWater:          false,
         
-        flowering:          false,
+        flowering:          true,
         
         
         
@@ -174,4 +174,5 @@ let app = new Vue({
 // CHECKED FIRST BATCH (EACH TYPE / HARD WATER = FALSE / FLOWERING = FALSE) ALL WORKING PROPERLY.
 // RE-CHECKED FIRST BATCH (EACH TYPE / HARD WATER = FALSE / FLOWERING = FALSE) ALL WORKING PROPERLY.  (Added display for ammonium sulfate.)
 // CHECKED SECOND BATCH (EACH TYPE / HARD WATER = TRUE / FLOWERING = FALSE) ALL WORKING PROPERLY.
+// CHECKED THIRD BATCH (MIX #3 / HARD WATER = FALSE / FLOWERING = TRUE) **NOT** WORKING PROPERLY.
 
