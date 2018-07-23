@@ -4,9 +4,17 @@ let app = new Vue({
     
     data: {
         
-        seedType: null,
+        seedType:           null,
         
-        number: 0
+        gallons:            10,
+        
+        masterBlend:        null,
+        
+        calciumNitrate:     null,
+        
+        magnesiumSulfate:   null,
+        
+        ammoniumSulfate:    null
         
         
         
@@ -17,19 +25,45 @@ let app = new Vue({
     
     methods: {
         
-        calculator: function(){
+        mixSelector: function(){
             
-            if (this.seedType == "PEPR")
+            
+            if (this.seedType == "LFGR")
                 {
-                    this.number = 5000 + " This is now a turtle."
+                    this.mixture_1();
                 }
             
             
+            if (this.seedType == "NUHG")
+                {
+                    this.masterBlend =      this.gallons * 2.4;
+                    this.calciumNitrate =   this.gallons * 2.4;
+                    this.magnesiumSulfate = this.gallons * 1.2;
+                }
             
+            
+            if (this.seedType == "PEPR")
+                {
+                    this.masterBlend =      this.gallons * 2;
+                    this.calciumNitrate =   this.gallons * 2;
+                    this.magnesiumSulfate = this.gallons * 1;
+                }
+            
+            
+        },   /*  END CALCULATOR FUNCTION  */
+        
+        
+        
+        mixture_1: function() {
+            
+            this.masterBlend =      this.gallons * 20000;
+            this.calciumNitrate =   this.gallons * 200000;
+            this.magnesiumSulfate = this.gallons * 1;
             
         }
         
-    }
+        
+    }   /*  END METHODS SECTION  */
         
 });
 

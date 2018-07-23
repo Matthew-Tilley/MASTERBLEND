@@ -16,7 +16,7 @@
             
             <select id="seedType"
                     v-model="seedType"
-                    v-on:change="calculator">
+                    v-on:change="mixSelector">
                 
                 <option value="LFGR"> Leafy greens </option>
                 <option value="NUHG"> Nutrient hogs </option>
@@ -26,7 +26,11 @@
             
          {{seedType}}
             
-            {{number}}
+           
+            
+            {{masterBlend}}
+            {{calciumNitrate}}
+            {{magnesiumSulfate}}
             
             
        
