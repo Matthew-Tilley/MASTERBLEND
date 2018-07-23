@@ -8,6 +8,10 @@
 .LOC-T-01
 {
     display: grid;
+    grid-template-areas:    "ING-01 OUT-01"
+                            "ING-02 OUT-02"
+                            "ING-03 OUT-03"
+                            "ING-04 OUT-04";
     
     
   
@@ -24,7 +28,12 @@
 }
 
 
-.ING-01 {grid-area: ING-01;}
-.ING-02 {grid-area: ING-02;}
-.ING-03 {grid-area: ING-03;}
-.ING-04 {grid-area: ING-04;}
+#ING-01 {grid-area: ING-01;}
+#ING-02 {grid-area: ING-02;}
+#ING-03 {grid-area: ING-03;}
+#ING-04 {grid-area: ING-04;}
+
+#OUT-01 {grid-area: OUT-01;}
+#OUT-02 {grid-area: OUT-02;}
+#OUT-03 {grid-area: OUT-03;}
+#OUT-04 {grid-area: OUT-04;}
