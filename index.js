@@ -19,7 +19,11 @@ let app = new Vue({
         
         calculator: function(){
             
-            this.number ++;
+            if (this.seedType == "PEPR")
+                {
+                    this.number = 5000 + " This is now a turtle."
+                }
+            
             
             
             
