@@ -17,19 +17,9 @@
             <input type="text" v-model="gallons"
                                v-on:change="mixSelector">
             
-            <label>Soft</label>
-            <input type="radio"
-                    name="waterType"
-                   value=false
-                   v-bind="hardWater"
-                   v-on:click="mixSelector">
+      
             
-            <label>Hard</label>
-            <input type="radio"
-                    name="waterType"
-                   value=true
-                   v-bind="hardWater"
-                   v-on:click="mixSelector">
+            
             
             <select id="plantType"
                     v-model="plantType"
