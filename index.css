@@ -11,3 +11,16 @@
     justify-content: center;
     align-items:    center;
 }
+
+
+.OPT-T-01
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:     20px;
+    width:      80px;
+    border:     2px solid black;
+    
+    color: red;
+}
