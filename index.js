@@ -4,7 +4,7 @@ let app = new Vue({
     
     data: {
         
-        seedType:           null,
+        plantType:           null,
         
         gallons:            10,
         
@@ -16,9 +16,9 @@ let app = new Vue({
         
         ammoniumSulfate:    null,
         
-        hardWater:          true,
+        hardWater:          false,
         
-        flowering:          true,
+        flowering:          null,
         
         
         
@@ -36,13 +36,13 @@ let app = new Vue({
       
         // ------------  MIXTURES FOR LFGR (LEAFY GREENS) ------------ //
             
-            if ( this.seedType == "LFGR" &&
+            if ( this.plantType == "LFGR" &&
                  this.hardWater == false )
                 {
                     this.mixture_5();
                 }
             
-            if ( this.seedType == "LFGR" &&
+            if ( this.plantType == "LFGR" &&
                  this.hardWater == true )
                 {
                     this.mixture_6();
@@ -50,14 +50,14 @@ let app = new Vue({
           
             // ------------  MIXTURES FOR NUHG (NUTRIENT HOGS) ------------ //
             
-            if (this.seedType == "NUHG" &&  //SOFT WATER
+            if (this.plantType == "NUHG" &&  //SOFT WATER
                 this.hardWater == false )
                 {
                     this.mixture_1();
                 }
             
             
-            if (this.seedType == "NUHG" &&  // HARD WATER
+            if (this.plantType == "NUHG" &&  // HARD WATER
                 this.hardWater == true )
                 {
                     this.mixture_2();
@@ -65,7 +65,7 @@ let app = new Vue({
             
             // ------------  MIXTURES FOR PEPR (PEPPERS) ------------ //
             
-            if ( this.seedType == "PEPR" &&  // SOFT WATER
+            if ( this.plantType == "PEPR" &&  // SOFT WATER
                  this.hardWater == false &&  // VEGETATION
                  this.flowering == false )
                     {
@@ -73,7 +73,7 @@ let app = new Vue({
                     }
             
             
-            if ( this.seedType == "PEPR" && // HARD WATER
+            if ( this.plantType == "PEPR" && // HARD WATER
                  this.hardWater == true &&  // VEGETATION
                  this.flowering == false )
                     {
@@ -81,7 +81,7 @@ let app = new Vue({
                     }
             
             
-            if ( this.seedType == "PEPR" &&  // SOFT WATER
+            if ( this.plantType == "PEPR" &&  // SOFT WATER
                  this.hardWater == false &&  // FLOWERING 
                  this.flowering == true )
                     {
@@ -89,7 +89,7 @@ let app = new Vue({
                     }
             
             
-            if ( this.seedType == "PEPR" &&  // HARD WATER
+            if ( this.plantType == "PEPR" &&  // HARD WATER
                  this.hardWater == true &&  // FLOWERING 
                  this.flowering == true )
                     {
