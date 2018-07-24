@@ -15,10 +15,15 @@
         
         <div id="app">
             
+            <p>How much nutrient solution would you like to make?  Enter the quantity in U.S. gallons:</p>
+            
             <input class="IPT-T-01"
                    type="text" 
                    v-model="gallons"
                    v-on:change="mixSelector">
+            
+            
+            <p>Is the source you are using considered "soft" or "hard" water?</p>
             
             <label>Soft</label>
             <input type="radio"
@@ -32,7 +37,7 @@
                    :value="true"
                    v-on:change="mixSelector">
             
-            
+            <p>Select the general category of plant you will be nourishing with this solution.</p>
             
             <select id="plantType"
                     v-model="plantType"
@@ -44,6 +49,7 @@
                 
             </select>
             
+            <p>Peppers only...select whether your plants are in the "flowering" or "vegetation" state."</p>
             
             <label>Flowering</label>
             <input type="radio"
@@ -59,9 +65,7 @@
             
             
             <div class="LOC-T-01">
-                
-                
-                
+                            
         
                 <p id="ING-01">Masterblend:</p>         <div id="OUT-01">{{masterBlend}}</div>      <p id="UNI-01">grams</p>
                 
@@ -74,19 +78,7 @@
                 
             </div>    
             
-            
-                
-           
-         
-            
-            
-            
-            
-            
-            
-            
-       
-            
+        
             
         </div>
         

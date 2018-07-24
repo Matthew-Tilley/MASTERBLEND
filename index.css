@@ -8,10 +8,7 @@
                             "ING-03 OUT-03 UNI-03"
                             "ING-04 OUT-04 UNI-04";
     
-    max-width: 400px;
-    
-    
-  
+    max-width: 400px;  
 }
 
 
@@ -22,6 +19,13 @@
     border:     2px solid black;
     
     color: red;
+}
+
+
+.IPT-T-01
+{
+    max-width: 30vw;
+    font-size:      10rem;
 }
 
 
