@@ -7,7 +7,7 @@
         
         <link rel="stylesheet"  type="text/css"  href="meyer_reset.css">
         <link rel="stylesheet"  type="text/css"  href="index.css">
-        <link rel="stylesheet"  href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css"></link>
+        <link rel="stylesheet"  href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
         
     </head>
     
@@ -35,17 +35,36 @@
                 
                     <p> Is the source you are using considered "soft" or "hard" water?</p>
             
+                    <template lang="html">
+                    <sui-form>
+                    <sui-form-field>
+                        
+                        <sui-checkbox>
+                            label="Soft"
+                            radio
+                            value="1"
+                            
+                        </sui-checkbox>
+                        
+                    </sui-form-field>
+                    </sui-form>
+                    </template>
+                    
+                    
+                    
                     <label>
                             Soft
                     </label>
-            
+                                        
+                    
                     <input  id="RAD-01"
                             name="RAD-01"
                             type="radio"
                             v-model="hardWater"
                             :value="false"
                             v-on:change="mixSelector">
-            
+                    
+                    
                     <label  id="LAB-02">
                             Hard
                     </label>

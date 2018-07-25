@@ -1,11 +1,3 @@
-$(document).ready(function() {
-   
-    $("#RAD-01").checkboxradio();
-    
-    $("#plantType").selectmenu();
-    
-    
-});
 
 
 let app = new Vue({
