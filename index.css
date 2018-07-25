@@ -9,3 +9,9 @@ header
 {
     height: 10vh;
 }
+
+
+tr:nth-child(even)
+{
+    background-color: lightgreen;
+}
