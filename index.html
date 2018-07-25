@@ -7,7 +7,7 @@
         
         <link rel="stylesheet"  type="text/css"  href="meyer_reset.css">
         <link rel="stylesheet"  type="text/css"  href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css"></link>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
         
     </head>
     
@@ -15,9 +15,7 @@
     <body>
         
         <div id="app">
-            
-            
-            
+                        
                 <div>   
                     <p> How much nutrient solution would you like to make?</p> 
                     
@@ -31,7 +29,7 @@
                 </div>  
                 
                 
-                <div>
+                
                 
                     <p> Is the source you are using considered "soft" or "hard" water?</p>
             
@@ -39,33 +37,42 @@
                     
                     
                     
-                    <label>
-                            Soft
-                    </label>
-                                        
+                <div class = "inline fields">    
+                                    
+                    <div class="field">
+                        
+                        <div class= "ui radio checkbox">
+                            
+                            <input  type=           "radio"
+                                    v-model=        "hardWater"
+                                    :value=         "false"
+                                    v-on:change=    "mixSelector">
+                            
+                            <label>Soft</label>
+                        
+                        </div>
+                                
+                    </div>  <!-- END FIELD CLASS -->
                     
-                    <input  id="RAD-01"
-                            name="RAD-01"
-                            type="radio"
-                            v-model="hardWater"
-                            :value="false"
-                            v-on:change="mixSelector">
                     
-                    
-                    <label  id="LAB-02">
-                            Hard
-                    </label>
+                    <div class="field">
+                        
+                        <div class= "ui radio checkbox">
+                            
+                            <input  type=           "radio"
+                                    v-model=        "hardWater"
+                                    :value=         "true"
+                                    v-on:change=    "mixSelector">
+                            
+                            <label>Hard</label>
+                        
+                        </div>
+                        
                 
-                    <input  id="RAD-02"
-                            type="radio"
-                            v-model="hardWater"
-                            :value="true"
-                            v-on:change="mixSelector">
+                    </div>  <!-- END FIELD CLASS -->
                 
-                </div>
-                
-                
-                
+            
+            </div>  <!-- END INLINE FIELD CLASS -->    
                 
                     
                     <p>Select the general category of plant you will be nourishing with this solution.</p>
@@ -89,26 +96,46 @@
                 
                     <p>Select whether your plants are in the "flowering" or "vegetation" state.</p>
             
-                    <label>
-                            Flowering
-                    </label>
             
-                    <input  id="RAD-03"
-                            type="radio"
-                            v-model="flowering"
-                            :value="true"
-                            v-on:change="mixSelector">
+                    <div class="field">
+                        
+                        <div class= "ui radio checkbox">
+                            
+                            <input  type=           "radio"
+                                    v-model=        "flowering"
+                                    :value=         "true"
+                                    v-on:change=    "mixSelector">
+                            
+                            <label>Flowering</label>
+                        
+                        </div>
+                        
+                
+                    </div>  <!-- END FIELD CLASS -->
+            
+            
+            
+                    <div class="field">
+                        
+                        <div class= "ui radio checkbox">
+                            
+                            <input  type=           "radio"
+                                    v-model=        "flowering"
+                                    :value=         "false"
+                                    v-on:change=    "mixSelector">
+                            
+                            <label>Vegetation</label>
+                        
+                        </div>
+                        
+                
+                    </div>  <!-- END FIELD CLASS -->
+            
+            
+                    
             
                 
-                    <label>
-                            Vegetation
-                    </label>
-                
-                    <input  id="RAD-04"
-                            type="radio"
-                            v-model="flowering"
-                            :value="false"
-                            v-on:change="mixSelector">
+                    
                     
                     <p>(Peppers only.)</p>
   
@@ -187,5 +214,50 @@
         
     </body>
     
-        
+        <!--<input  id="RAD-01"
+                                name="RAD-01"
+                                class="ui radio checkbox"
+                                type="radio"
+                                v-model="hardWater"
+                                :value="false"
+                                v-on:change="mixSelector">
+                 <label>
+                                Soft
+                        </label>-->
+    
+    
+    
+    <!--<input  id="RAD-02"
+                                type="radio"
+                                v-model="hardWater"
+                                :value="true"
+                                v-on:change="mixSelector">
+                        
+                        <label  id="LAB-02">
+                                Hard
+                        </label>-->
+    
+    
+    
+  <!--  <label>
+                            Flowering
+                    </label>
+            
+                    <input  id="RAD-03"
+                            type="radio"
+                            v-model="flowering"
+                            :value="true"
+                            v-on:change="mixSelector">-->
+    
+    
+    
+    <!--<label>
+                            Vegetation
+                    </label>
+                
+                    <input  id="RAD-04"
+                            type="radio"
+                            v-model="flowering"
+                            :value="false"
+                            v-on:change="mixSelector">-->
 </html>
