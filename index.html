@@ -19,10 +19,18 @@
                 <div>   
                     <p> How much nutrient solution would you like to make?</p> 
                     
-                    
-                    <input  type="text" 
+                    <div class="ui input">
+                        
+                        <input  type="text"
+                                placeholder="U.S. Gallons"
                             v-model="gallons"
                             v-on:change="mixSelector">
+                        
+                    </div>
+                    
+                    
+                    
+                    
                     
                     <p> (Enter the quantity in U.S. gallons.) </p>
             
