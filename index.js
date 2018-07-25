@@ -1,3 +1,13 @@
+$(document).ready(function() {
+   
+    $("#RAD-01").checkboxradio();
+    
+    $("#plantType").selectmenu();
+    
+    
+});
+
+
 let app = new Vue({
    
     el: "#app",
@@ -176,4 +186,6 @@ let app = new Vue({
 // CHECKED THIRD BATCH (MIX #3 / HARD WATER = FALSE / FLOWERING = TRUE) **NOT** WORKING PROPERLY.
 // RE-CHECKED THIRD BATCH (MIX #3 / HARD WATER = FALSE / FLOWERING = TRUE) AFTER FINDING & CORRECTING PROBLEM - NOW WORKING PROPERLY.
 // CHECKED FOURTH BATCH (MIX #4 / HARD WATER = TRUE / FLOWERING = TRUE) - WORKING PROPERLY.
+
+
 
