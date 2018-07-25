@@ -6,15 +6,21 @@
     <head>
         
         <!--<link rel="stylesheet"  type="text/css"  href="meyer_reset.css">-->
-        <link rel="stylesheet"  type="text/css"  href="index.css">
+       
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
-        
+         <link rel="stylesheet"  type="text/css"  href="index.css">
     </head>
     
     
     <body>
         
+        <header>
+            MASTERBLEND NUTRIENT CALCULATOR
+        </header>
+        
         <div id="app">
+            
+            <div class="ui container">
                         
                 <div>   
                     <p> How much nutrient solution would you like to make?</p> 
@@ -169,70 +175,43 @@
                               
                     <p>(Peppers only.)</p>
   
-                    <div class="ui label blue">
+                    <div class="ui label green fluid huge">
                     
-                    {{masterBlend}} grams of Masterblend
+                    {{masterBlend}} grams / Masterblend
                         
                     </div>
+            
                 
-
+                    <br><br>
+            
+                    <div class="ui label green fluid huge">
                     
-                    <p  id="ING-01">
-                        Masterblend:
-                    </p>         
-                    
-                        <div    id="OUT-01">
-                                {{masterBlend}}
-                        </div>      
-                    
-                            <p id="UNI-01">                                                                                                                 
-                                grams
-                            </p>
-                    
-
-                    <p  id="ING-02">
-                        Calcium nitrate:
-                    </p>     
+                    {{calciumNitrate}} grams / calcium nitrate
                         
-                        <div    id="OUT-02">
-                                {{calciumNitrate}}
-                        </div>   
+                    </div>
+            
+                    <br><br>
+            
+                    <div class="ui label green fluid huge">
+                    
+                    {{ammoniumSulfate}} grams / ammonium sulfate
                         
-                            <p  id="UNI-02">
-                                grams
-                            </p>
-
+                    </div>
                     
-                    <p  id="ING-03">
-                        Ammonium sulfate:
-                    </p>    
+                    <br><br>
                     
-                        <div    id="OUT-03">
-                                {{ammoniumSulfate}}
-                        </div>  
-                            
-                            <p id="UNI-03">
-                                grams
-                            </p>
-
+                    <div class="ui label green fluid huge">
                     
-                    <p  id="ING-04">
-                        Magnesium sulfate:
-                    </p>   
+                    {{magnesiumSulfate}} grams / magnesium sulfate
                         
-                        <div    id="OUT-04">
-                                {{magnesiumSulfate}}
-                        </div> 
-                            
-                            <p id="UNI-04">
-                                grams
-                            </p>
-
-                  
+                    </div>
+               
+                    
+        </div>  <!--  END OF SEMANTIC-UI CONTAINER DIV  -->  
             
             
              
-        </div>
+        </div>  <!--  END OF #APP DIV  -->
         
     <script
         src="https://code.jquery.com/jquery-3.3.1.min.js"
@@ -293,4 +272,65 @@
                             v-model="flowering"
                             :value="false"
                             v-on:change="mixSelector">-->
+    
+    
+    
+       <!-- <p  id="ING-01">
+                        Masterblend:
+                    </p>         
+                    
+                        <div    id="OUT-01">
+                                {{masterBlend}}
+                        </div>      
+                    
+                            <p id="UNI-01">                                                                                                                 
+                                grams
+                            </p>-->
+    
+    
+    
+    
+   <!-- <p  id="ING-02">
+                        Calcium nitrate:
+                    </p>     
+                        
+                        <div    id="OUT-02">
+                                {{calciumNitrate}}
+                        </div>   
+                        
+                            <p  id="UNI-02">
+                                grams
+                            </p>-->
+    
+    
+    
+   <!-- <p  id="ING-03">
+                        Ammonium sulfate:
+                    </p>    
+                    
+                        <div    id="OUT-03">
+                                {{ammoniumSulfate}}
+                        </div>  
+                            
+                            <p id="UNI-03">
+                                grams
+                            </p>
+                    -->
+    
+    
+    <!--<p  id="ING-04">
+                        Magnesium sulfate:
+                    </p>   
+                        
+                        <div    id="OUT-04">
+                                {{magnesiumSulfate}}
+                        </div> 
+                            
+                            <p id="UNI-04">
+                                grams
+                            </p>
+-->
+                  
+    
+    
 </html>
