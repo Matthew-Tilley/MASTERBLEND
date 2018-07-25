@@ -15,44 +15,37 @@
         
         <div id="app">
             
-            <div class="LOC-T-02">
             
-                <div id="LOC-03">   
+            
+                <div>   
+                    <p> How much nutrient solution would you like to make?</p> 
                     
-                    <p class="PAT-T-01"> How much nutrient solution would you like to make?</p> 
                     
-                    
-                    <input  class="IPT-T-01"
-                            type="text" 
+                    <input  type="text" 
                             v-model="gallons"
                             v-on:change="mixSelector">
                     
-                    <p class="PAT-T-01"> (Enter the quantity in U.S. gallons.) </p>
+                    <p> (Enter the quantity in U.S. gallons.) </p>
             
-                </div>  <!--END #LOC-03-->
+                </div>  
                 
                 
-                <div id="LOC-04">
+                <div>
                 
-                    <p class="PAT-T-01"> Is the source you are using considered "soft" or "hard" water?</p>
+                    <p> Is the source you are using considered "soft" or "hard" water?</p>
             
-                    <label  id="LAB-01"
-                            
-                            
-                            for="RAD-01">
+                    <label>
                             Soft
                     </label>
             
                     <input  id="RAD-01"
-                            class="RAD-T-01"
                             name="RAD-01"
                             type="radio"
                             v-model="hardWater"
                             :value="false"
                             v-on:change="mixSelector">
             
-                    <label  id="LAB-02"
-                            class="LAB-T-01">
+                    <label  id="LAB-02">
                             Hard
                     </label>
                 
@@ -62,13 +55,13 @@
                             :value="true"
                             v-on:change="mixSelector">
                 
-                </div>  <!--END LOC-T-04-->
+                </div>
                 
                 
-                <div id="LOC-05">
+                
                 
                     
-                    <p class="PAT-T-01">Select the general category of plant you will be nourishing with this solution.</p>
+                    <p>Select the general category of plant you will be nourishing with this solution.</p>
             
                     <select id="plantType"
                             v-model="plantType"
@@ -81,16 +74,15 @@
                     </select>
                 
                 
-                </div>
+               
                 
                 
                 
-                <div id="LOC-06">
                 
-                    <p class="PAT-T-01">Select whether your plants are in the "flowering" or "vegetation" state.</p>
+                
+                    <p>Select whether your plants are in the "flowering" or "vegetation" state.</p>
             
-                    <label  id="LAB-03"
-                            class="LAB-T-01">
+                    <label>
                             Flowering
                     </label>
             
@@ -101,8 +93,7 @@
                             v-on:change="mixSelector">
             
                 
-                    <label  id="LAB-04"
-                            class="LAB-T-01">
+                    <label>
                             Vegetation
                     </label>
                 
@@ -112,56 +103,39 @@
                             :value="false"
                             v-on:change="mixSelector">
                     
-                    <p class="PAT-T-01">(Peppers only.)</p>
+                    <p>(Peppers only.)</p>
+  
+            
+            
                 
-                </div>
-            
-            
-            
-            
-            >
-
-            </div>      <!--END LOC-T-02 CONTAINS WHOLE GRID-->
-                
-                
-            <div id="LOC-07">   
-            
-                <div class="LOC-T-01">
 
                     
-                    <p  id="ING-01"
-                        class="PAT-T-02">
+                    <p  id="ING-01">
                         Masterblend:
                     </p>         
                     
-                        <div    id="OUT-01"
-                                class="PAT-T-02">
+                        <div    id="OUT-01">
                                 {{masterBlend}}
                         </div>      
                     
-                            <p id="UNI-01"  
-                               class="PAT-T-02">                                                                                                           grams
+                            <p id="UNI-01">                                                                                                           grams
                             </p>
                     
 
-                    <p  id="ING-02"
-                        class="PAT-T-02">
+                    <p  id="ING-02">
                         Calcium nitrate:
                     </p>     
                         
-                        <div    id="OUT-02"
-                                class="PAT-T-02">
+                        <div    id="OUT-02">
                                 {{calciumNitrate}}
                         </div>   
                         
-                            <p  id="UNI-02"
-                                class="PAT-T-02">
+                            <p  id="UNI-02">
                                 grams
                             </p>
 
                     
-                    <p  id="ING-03"
-                        class="PAT-T-02">
+                    <p  id="ING-03">
                         Ammonium sulfate:
                     </p>    
                     
@@ -169,30 +143,26 @@
                                 {{ammoniumSulfate}}
                         </div>  
                             
-                            <p id="UNI-03"
-                               class="PAT-T-02">
+                            <p id="UNI-03">
                                 grams
                             </p>
 
                     
-                    <p  id="ING-04"
-                        class="PAT-T-02">
+                    <p  id="ING-04">
                         Magnesium sulfate:
                     </p>   
                         
-                        <div    id="OUT-04"
-                                class="PAT-T-02">
+                        <div    id="OUT-04">
                                 {{magnesiumSulfate}}
                         </div> 
                             
-                            <p id="UNI-04"
-                               class="PAT-T-02">
+                            <p id="UNI-04">
                                 grams
                             </p>
 
-                </div>    
+                  
             
-            </div>
+            
              
         </div>
         
