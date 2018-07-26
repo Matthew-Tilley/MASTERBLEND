@@ -97,8 +97,7 @@ let app = new Vue({
             
             
             if ( this.plantType == "PEPRFL" &&  // SOFT WATER
-                 this.hardWater == false &&  // FLOWERING 
-                 this.flowering == true )
+                 this.hardWater == false)  // FLOWERING 
                     {
                         this.mixture_3();
                     }
