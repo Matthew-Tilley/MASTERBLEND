@@ -63,44 +63,79 @@ let app = new Vue({
             
             // ------------  MIXTURES FOR PEPR (PEPPERS) ------------ //
             
+            /*
+            
             if ( this.plantType == "PEPR" &&  // SOFT WATER
                  this.hardWater == false &&  // VEGETATION
                  this.flowering == false )
                     {
                         this.mixture_1();
                     }
+                    
+            */
             
             
-            if ( this.plantType == "PEPR" && // HARD WATER
-                 this.hardWater == true &&  // VEGETATION
-                 this.flowering == false )
+            /*
+            
+            if ( this.plantType == "PEPR" &&        // HARD WATER
+                 this.hardWater == true &&          // VEGETATION
+                 this.flowering == false )          // RADIO BUTTON
                     {
                         this.mixture_2();
                     }
+            */
             
             
-            /*if ( this.plantType == "PEPR" &&  // SOFT WATER
-                 this.hardWater == false &&  // FLOWERING 
-                 this.flowering == true )
+            /*
+            
+            if (  this.plantType == "PEPR" &&       // SOFT WATER
+                    this.hardWater == false &&      // FLOWERING 
+                    this.flowering == true )        // RADIO BUTTON
                     {
                         this.mixture_3();
-                    }*/
+                    }
+            
+            */
             
             
-            if ( this.plantType == "PEPR" &&  // HARD WATER
-                 this.hardWater == true &&  // FLOWERING 
-                 this.flowering == true )
+            /*
+            
+            if (    this.plantType == "PEPR" &&     // HARD WATER
+                    this.hardWater == true &&       // FLOWERING 
+                    this.flowering == true )        // RADIO BUTTON
                     {
+                        this.mixture_4();
+                    }
+            */
+            
+            
+            if ( this.plantType == "PEPRFL" &&      // SOFT WATER
+                 this.hardWater == false)           // FLOWERING 
+                    {                               // DROPDOWN
+                        this.mixture_3();
+                    }
+            
+            
+            if ( this.plantType == "PEPRFL" &&      // HARD WATER
+                 this.hardWater == true)            // FLOWERING                           
+                    {                               // DROPDOWN
                         this.mixture_4();
                     }
             
             
-            
-            if ( this.plantType == "PEPRFL" &&  // SOFT WATER
-                 this.hardWater == false)  // FLOWERING 
-                    {
-                        this.mixture_3();
+            if ( this.plantType == "PEPRVG" &&      // SOFT WATER
+                 this.hardWater == false)           // VEGETATION
+                    {                               // DROPDOWN
+                        this.mixture_1();
                     }
+            
+            
+            if ( this.plantType == "PEPRVG" &&      // HARD WATER
+                 this.hardWater == true)            // VEGETATION
+                    {                               // DROPDOWN
+                        this.mixture_2();
+                    }
+                   
             
         },   /*  END CALCULATOR FUNCTION  */
         
@@ -181,7 +216,6 @@ let app = new Vue({
 });
 
 
-$(".ui.dropdown").dropdown();
 
 
 
