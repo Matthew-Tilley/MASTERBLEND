@@ -79,12 +79,12 @@ let app = new Vue({
                     }
             
             
-            if ( this.plantType == "PEPR" &&  // SOFT WATER
+            /*if ( this.plantType == "PEPR" &&  // SOFT WATER
                  this.hardWater == false &&  // FLOWERING 
                  this.flowering == true )
                     {
                         this.mixture_3();
-                    }
+                    }*/
             
             
             if ( this.plantType == "PEPR" &&  // HARD WATER
@@ -92,6 +92,15 @@ let app = new Vue({
                  this.flowering == true )
                     {
                         this.mixture_4();
+                    }
+            
+            
+            
+            if ( this.plantType == "PEPRFL" &&  // SOFT WATER
+                 this.hardWater == false &&  // FLOWERING 
+                 this.flowering == true )
+                    {
+                        this.mixture_3();
                     }
             
         },   /*  END CALCULATOR FUNCTION  */
