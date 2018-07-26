@@ -216,7 +216,7 @@ let app = new Vue({
 });
 
 
-$(".ui.dropdown").dropdown();
+$(".ui.normal.dropdown").dropdown();
 
 
 
