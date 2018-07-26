@@ -1,5 +1,3 @@
-
-
 let app = new Vue({
    
     el: "#app",
@@ -23,7 +21,6 @@ let app = new Vue({
         flowering:          null,
           
     },   /*  END DATA SECTION  */
-    
     
     
     
@@ -216,7 +213,7 @@ let app = new Vue({
 });
 
 
-$(".ui.dropdown").dropdown();
+//$(".ui.dropdown").dropdown();
 
 
 

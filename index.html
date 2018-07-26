@@ -10,13 +10,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.3.0/semantic.min.css">
         <link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
         <link rel="stylesheet"  type="text/css"  href="index.css">
+        
     </head>
     
     
     <body>
         
         <header>
+        
             Hydroponic Nutrient Calculator
+            
         </header>
         
         <div id="app">
@@ -36,64 +39,62 @@
                         
                         <input  type="text"
                                 placeholder="Enter the number of U.S. Gallons you wish to make:"
-                            v-model="gallons"
-                            v-on:change="mixSelector">
+                                v-model="gallons"
+                                v-on:change="mixSelector">
                         
                     </div>
       
                 
-                <div class="ui segment">
+                    <div class="ui segment">
+
+                        <p>Are you using a "soft" or "hard" water source?</p>     
+
+                    </div>
+                    
                 
-                    <p>Are you using a "soft" or "hard" water source?</p>     
-                
-                </div>
-                    
-            
-                    
-                    
-                    
-                    
-                <div class = "inline fields">    
-                                    
-                    <div class="field">
-                        
-                        <div class= "ui radio checkbox">
-                            
-                            <input  type=           "radio"
-                                    v-model=        "hardWater"
-                                    :value=         "false"
-                                    v-on:change=    "mixSelector">
-                            
-                            <label>Soft</label>
-                        
-                        </div>
-                                
-                    </div>  <!-- END FIELD CLASS -->
-                    
-                    
-                    <div class="field">
-                        
-                        <div class= "ui radio checkbox">
-                            
-                            <input  type=           "radio"
-                                    v-model=        "hardWater"
-                                    :value=         "true"
-                                    v-on:change=    "mixSelector">
-                            
-                            <label>Hard</label>
-                        
-                        </div>
-                        
-                
-                    </div>  <!-- END FIELD CLASS -->
+                    <div class = "inline fields">    
+
+                        <div class="field">
+
+                            <div class= "ui radio checkbox">
+
+                                <input  type=           "radio"
+                                        v-model=        "hardWater"
+                                        :value=         "false"
+                                        v-on:change=    "mixSelector">
+
+                                <label>Soft</label>
+
+                            </div>
+
+                        </div>  <!-- END FIELD CLASS -->
+
+
+                        <div class="field">
+
+                            <div class= "ui radio checkbox">
+
+                                <input  type=           "radio"
+                                        v-model=        "hardWater"
+                                        :value=         "true"
+                                        v-on:change=    "mixSelector">
+
+                                <label>Hard</label>
+
+                            </div>
+
+
+                        </div>  <!-- END FIELD CLASS -->
                 
             
-            </div>  <!-- END INLINE FIELD CLASS -->    
+                    </div>  <!-- END INLINE FIELD CLASS -->    
                 
                     
-                <div class="ui segment">
-                <p>Select the general category of plant you will be nourishing with this solution.</p>     
-                </div>
+                    <div class="ui segment">
+                        
+                        <p>Select the general category of plant you will be nourishing with this solution.</p>     
+                        
+                    </div>
                    
             
    
@@ -113,10 +114,9 @@
                     </select>-->
                 
                 
-                    <select class="ui selection dropdown"
+                    <select class="ui selection dropdown fluid"
                             v-model="plantType"
-                            v-on:change="mixSelector">
-                        <i class="dropdown icon"></i>
+                            v-on:change="mixSelector">                       
                         
                         <option value="LFGR">   Leafy greens            </option>
                         <option value="NUHG">   Nutrient hogs           </option>
@@ -124,13 +124,6 @@
                         <option value="PEPRVG"> Peppers-vegetation      </option>
                         
                     </select>
-                
-                
-   
-               
-                
-                
-                
                 
                 
                     <!--<p>Select whether your plants are in the "flowering" or "vegetation" state.</p>-->
@@ -170,9 +163,6 @@
                 
                     </div>-->  <!-- END FIELD CLASS -->
             
-                              
-                   
-  
                 
                     <table class="ui celled table">
                         
@@ -207,16 +197,14 @@
                     </table>
                
                     
-        </div>  <!--  END OF SEMANTIC-UI CONTAINER DIV  -->  
-            
-            
+            </div>  <!--  END OF SEMANTIC-UI CONTAINER DIV  -->          
              
         </div>  <!--  END OF #APP DIV  -->
         
     <script
-        src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous">
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
     </script>
         
         

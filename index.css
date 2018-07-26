@@ -4,8 +4,8 @@ body
         
 }
 
-header
-{
+header {
+    
     display:                flex;
     justify-content:        center;
     align-items:            center;
@@ -16,17 +16,17 @@ header
     font-family:            'Squada One', cursive;
     font-size:              5rem;     
     color:                  white;
-    -webkit-text-stroke: 1px black;
     
     background-image:       url("ASSETS/BG-LTPLNT.jpeg");
     background-repeat:      no-repeat;
     background-size:        cover;
     
-    
+    -webkit-text-stroke: 1px black;
 }
 
 
-tr:nth-child(even)
-{
-    background-color: lightgreen;
+tr:nth-child(even) {
+    
+    background-color:       lightgreen;
+    
 }
