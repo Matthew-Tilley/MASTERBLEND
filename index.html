@@ -111,6 +111,16 @@
                     </select>
                 
                 
+                    <select class="ui selection dropdown"
+                            v-model="plantType"
+                            v-on:change="mixSelector">
+                        
+                        <option value="LFGR">   Leafy greens            </option>
+                        <option value="NUHG">   Nutrient hogs           </option>
+                        <option value="PEPRFL"> Peppers-flowering       </option>
+                        <option value="PEPRVG"> Peppers-vegetation      </option>
+                        
+                    </select>
                 
                 
    
