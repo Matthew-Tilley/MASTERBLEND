@@ -173,5 +173,8 @@ let app = new Vue({
 });
 
 
+$("#plantType").dropdown();
+
+
 
 
