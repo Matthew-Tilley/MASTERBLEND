@@ -16,6 +16,7 @@ header
     font-family:            'Squada One', cursive;
     font-size:              3rem;     
     color:                  white;
+    -webkit-text-stroke: 1px black;
     
     background-image:       url("ASSETS/BG-LTPLNT.jpeg");
     background-repeat:      no-repeat;
