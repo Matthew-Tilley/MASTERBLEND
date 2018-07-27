@@ -216,6 +216,14 @@ let app = new Vue({
 //$(".ui.dropdown").dropdown();
 
 
+$("#BUT-01").on("click", function() {
+
+    document.write("LKJASDLKJAD");
+    
+});
+
+
+
 
 
 
