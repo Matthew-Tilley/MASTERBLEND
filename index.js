@@ -213,10 +213,6 @@ let app = new Vue({
 });
 
 
-//$(".ui.dropdown").dropdown();
-
-
-
 
 
 
