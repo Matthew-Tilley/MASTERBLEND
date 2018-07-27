@@ -218,7 +218,7 @@ let app = new Vue({
 
 $("#BUT-01").on("click", function() {
 
-    $("#MOD-01").modal("show");
+    $(".ui.modal").modal("show");
     
 });
 
